@@ -5,8 +5,8 @@ const Bookmark = ({bookmark}) => {
     const {title} = bookmark;
     return(
         <section >
-        <div className='bg-slate-200 p-4 m-4 rounded-xl'>
-            <h3 className='text-2xl'>{title}</h3>
+        <div className='bg-white p-4 m-4 rounded-xl'>
+            <h3 className='text-lg'>{title}</h3>
         </div>
         </section>
     )
