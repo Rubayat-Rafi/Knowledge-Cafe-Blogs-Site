@@ -1,6 +1,7 @@
-import { useState } from "react"
 import "../../public/Blogs.json"
+import { useState } from "react"
 import { useEffect } from "react";
+import Blog from "./blog";
 
 const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
@@ -13,7 +14,12 @@ const Blogs = () => {
 
 
     return(
-        <h1>Blogs</h1>
+        <section className="md:w-2/3">
+            {
+                blogs.map(blog => <Blog key={blogs.id} blog={blog}></Blog>)
+            }
+        </section>
+
     )
 }
 

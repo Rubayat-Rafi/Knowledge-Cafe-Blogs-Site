@@ -2,29 +2,29 @@
     {
       "id": 1,
       "cover": "../src/images/1.jpg",
-      "title": "The Future of AI in Healthcare",
+      "title": "How to get your first job as a self-taught programmer",
       "author_img": "../src/images/boy1.png",
-      "author": "Dr. Sarah Evans",
-      "posted_date": "2024-10-15",
+      "author": "Mr. Raju",
+      "posted_date": "Mar 14 (4 Days ago)",
       "reading_time": "8 min read",
-      "hashtags": ["#AI", "#Healthcare", "#Innovation"]
+      "hashtags": ["#beginners", "#programming"]
     },
     {
       "id": 2,
-      "cover": "../src/images/2.jpg",
+      "cover": "../src/images/2.png",
       "title": "Mastering Frontend Development in 2024",
-      "author_img": "../src/images/girl1.png",
-      "author": "John Doe",
+      "author_img": "../src/images/girl1.jpg",
+      "author": "Mrs. Setara",
       "posted_date": "2024-09-30",
       "reading_time": "10 min read",
       "hashtags": ["#Frontend", "#Development", "#WebDesign"]
     },
     {
       "id": 3,
-      "cover": "../src/images/3.jpg",
+      "cover": "../src/images/3.png",
       "title": "Sustainable Living: A Modern Approach",
-      "author_img": "../src/images/boy2.png",
-      "author": "Emily Green",
+      "author_img": "../src/images/girl2.jpg",
+      "author": "Mina Mostofa",
       "posted_date": "2024-10-01",
       "reading_time": "5 min read",
       "hashtags": ["#Sustainability", "#GreenLiving", "#EcoFriendly"]
@@ -33,7 +33,7 @@
       "id": 4,
       "cover": "../src/images/4.jpg",
       "title": "Exploring Space: What’s Next for NASA?",
-      "author_img": "../src/images/girl2.png",
+      "author_img": "../src/images/boy2.png",
       "author": "Mark Thompson",
       "posted_date": "2024-09-20",
       "reading_time": "7 min read",
