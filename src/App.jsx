@@ -3,9 +3,6 @@ import './App.css'
 import Blogs from './Component/Blogs'
 import Bookmarks from './Component/Bookmarks'
 import Header from './Component/Header'
-import Bookmark from './Component/Bookmark'
-
-
 
 function App() {
 
