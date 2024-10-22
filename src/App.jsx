@@ -3,6 +3,7 @@ import './App.css'
 import Blogs from './Component/Blogs'
 import Bookmarks from './Component/Bookmarks'
 import Header from './Component/Header'
+import Bookmark from './Component/Bookmark'
 
 
 
@@ -15,14 +16,18 @@ const handleBookmarks = (blog) => {
   // console.log(blog , "paice tore");
   const newBookmarks = [...bookmarks, blog];
   setBookmarks(newBookmarks);
+  
 }
 
 
-const handleMarkAsRead = time => {
-  // console.log('readinggggggggg', typeof(time));
+
+const handleMarkAsRead = (id, time) => {
   const num = parseFloat(time)
   const newTime = readTime + num;
   setReadTime(newTime);
+
+  const remainingBookmarks = bookmarks.filter(Bookmark => Bookmark.id !== id);
+  setBookmarks(remainingBookmarks);
 }
 
 

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { BsBookmarks } from "react-icons/bs";
 const Blog = ({blog, handleBookmarks, handleMarkAsRead}) => {
 
-    const {cover, title, author_img, author, reading_time, hashtags, posted_date} = blog;
+    const {id, cover, title, author_img, author, reading_time, hashtags, posted_date} = blog;
 
     return(
         <div className='border-b-2 mb-8'>
@@ -28,7 +28,7 @@ const Blog = ({blog, handleBookmarks, handleMarkAsRead}) => {
                     hashtags.map((hash, idx) => <span key={idx}><a href="#" className='text-base font-medium opacity-60 leading-10'>{hash}</a></span>)
                 }
             </p>
-            <button onClick={()=>handleMarkAsRead(reading_time)} className='mt-4 text-[#6047EC] underline text-base font-semibold'>Mark as read</button>
+            <button onClick={()=>handleMarkAsRead(id, reading_time)} className='mt-4 text-[#6047EC] underline text-base font-semibold'>Mark as read</button>
             
             </div>
         </div>
