@@ -5,7 +5,7 @@ import Blog from "./blog";
 import PropTypes from "prop-types";
 
 
-const Blogs = ({handleBookmarks}) => {
+const Blogs = ({handleBookmarks, handleMarkAsRead}) => {
 
     const [blogs, setBlogs] = useState([]);
 
@@ -20,7 +20,7 @@ const Blogs = ({handleBookmarks}) => {
         <section className="md:w-2/3">
             {
                 blogs.map(blog => 
-                <Blog key={blogs.id} blog={blog} handleBookmarks={handleBookmarks}>
+                <Blog key={blogs.id} blog={blog} handleBookmarks={handleBookmarks} handleMarkAsRead={handleMarkAsRead}>
                 </Blog>)
             }
         </section>
@@ -30,6 +30,7 @@ const Blogs = ({handleBookmarks}) => {
 
 Blogs.prototypes = {
     handleBookmarks: PropTypes.func,
+    handleMarkAsRead: PropTypes.func,
 }
 
 export default Blogs

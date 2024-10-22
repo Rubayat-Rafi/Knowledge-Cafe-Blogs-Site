@@ -9,6 +9,7 @@ import Header from './Component/Header'
 function App() {
 
   const [bookmarks, setBookmarks] =useState([]);
+  const [readTime, setReadTime] = useState(0);
 
 const handleBookmarks = (blog) => {
   // console.log(blog , "paice tore");
@@ -17,13 +18,20 @@ const handleBookmarks = (blog) => {
 }
 
 
+const handleMarkAsRead = time => {
+  // console.log('readinggggggggg', typeof(time));
+  const num = parseFloat(time)
+  const newTime = readTime + num;
+  setReadTime(newTime);
+}
+
+
   return (
     <>
      <Header></Header>
-
-     <main className='md:flex justify-between max-w-7xl mx-auto w-11/12 mt-8 gap-6'>
-     <Blogs handleBookmarks={handleBookmarks}></Blogs>
-     <Bookmarks bookmarks={bookmarks}></Bookmarks>
+     <main className='md:flex justify-between max-w-7xl mx-auto w-11/12 mt-8 gap-6 mb-14'>
+     <Blogs handleBookmarks={handleBookmarks} handleMarkAsRead={handleMarkAsRead}></Blogs>
+     <Bookmarks bookmarks={bookmarks} readTime={readTime}></Bookmarks>
      </main>
     </>
   )
